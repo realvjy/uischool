@@ -46,14 +46,16 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-149290749-1`,
       },
     },
     `gatsby-plugin-feed`,
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

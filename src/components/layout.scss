@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote {
+  &:before, &:after {
+    content: '';
+    content: none; } }
+
+q {
+  &:before, &:after {
+    content: '';
+    content: none; } }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+
+
+html,  body{
+  font-family: 'Poppins', sans-serif;
+}
+
+$playfair: 'Playfair Display', serif;
+
+// Variables
+$black: #181818;
+$white: #ffffff;
+$grey: #F1EDE9;
+$blue: #1C2CC2;
+$pink: #FF69A8;
+$orange: #FF8F6B;
+$sky: #4FCAFF;
+$light-grey: #F9F9FA;
+// Breakpoints
+$mobile-landscape: 30rem; // 480px
+$tablet: 40rem; // 640px
+$tablet-wide: 48rem; // 768px
+$desktop: 64rem; // 1024px
+$widescreen: 71.25rem; // 1140px
+
+body, html{
+  background: $light-grey;
+}
+// Basic layout
+.container{
+  max-width: 1040px;
+  margin: 0 auto;
+  @media (max-width: $tablet-wide){
+      width: 100%;
+  }
+}
+
+.hero_section{
+  background: $blue;
+  padding-bottom: 120px;
+  background-image: url('/uischool-pat.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero_details{
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  img{
+    max-height: 120px;
+  }
+  h1{
+    color: $white;
+    font-size: 52px;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 130%;
+    margin-top: 20px;
+  }
+}
+.featured_section{
+  article{
+    margin: 30px 200px;
+    -webkit-box-shadow: 0 6px 0px -2px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0 6px 0px -2px rgba(0,0,0,0.05);
+    box-shadow: 0 6px 0px -2px rgba(0,0,0,0.05);
+    .article_box{
+      padding: 30px 48px;
+      background: $white;
+      .tag_list{
+        margin-bottom: 10px;
+          >li{
+            display: inline-block;
+            background: $pink;
+            color: $white;
+            margin-right: 5px;
+          }
+      }
+      a{
+        color: $black;
+      }
+      h2{
+        font-family: $playfair;
+        font-size: 30px;
+        line-height: 130%;
+        margin-bottom: 20px;
+      }
+    }
+    &:hover{
+      -webkit-box-shadow: 0 12px 54px -2px rgba(0,0,0,0.1);
+      -moz-box-shadow: 0 12px 54px -2px rgba(0,0,0,0.1);
+      box-shadow: 0 12px 54px -2px rgba(0,0,0,0.1);
+    }
+  }
+}
+.footer{
+  text-align: center;
+  padding-bottom: 20px;
+  h3{
+    font-size: 20px;
+    opacity: .6;
+    a{
+      text-decoration: none;
+      font-weight: 600;
+      color: $black;
+      &:hover{
+
+      }
+    }
+  }
+
+}

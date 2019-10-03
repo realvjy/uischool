@@ -1,10 +1,8 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 
 class BlogIndex extends React.Component {
   render() {
@@ -20,15 +18,22 @@ class BlogIndex extends React.Component {
           <div className="hero_details">
             <img src="/logo.svg"/>
             <h1>We are creating the next generation designers</h1>
+            <div className="form">
+              Comming Soon
+            </div>
           </div>
         </div>
         </header>
+        <div className="container featured_head">
+          <h1>Featured Read</h1>
+        </div>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <>
               <section className="featured_section">
                 <div className="container">
+
                   <article key={node.fields.slug}>
                     <div className="article_box">
                       <ul className="tag_list">
@@ -44,10 +49,10 @@ class BlogIndex extends React.Component {
                         </h2>
                         <div className="meta_info">
                           <div className="credit">
-                            Author <h4>{node.frontmatter.author}</h4> • <h4>6 min reads</h4>
+                            <h4>Author <strong>{node.frontmatter.author}</strong></h4> • <h4>{node.frontmatter.time}</h4>
                           </div>
                           <div className="source">
-                            {node.frontmatter.source}
+                            <img src="/anchor.svg"/>{node.frontmatter.source}
                           </div>
                         </div>
                       </a>
@@ -88,6 +93,7 @@ export const pageQuery = graphql`
             category
             link
             tags
+            time
           }
         }
       }

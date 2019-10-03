@@ -8,4 +8,5 @@ link: "https://medium.com/@jaf_designer/why-product-thinking-is-the-next-big-thi
 source: "medium.com"
 tags: ["Design", "UX"]
 category: Article
+time: 5 min reads
 ---

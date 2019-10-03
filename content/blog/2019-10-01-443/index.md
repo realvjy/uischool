@@ -8,4 +8,5 @@ link: "https://medium.com/ux-in-motion/creating-usability-with-motion-the-ux-in-
 source: "medium.com"
 tags: ["Motion", "UX"]
 category: Article
+time: 25 min reads
 ---

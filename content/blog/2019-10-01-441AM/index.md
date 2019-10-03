@@ -9,4 +9,5 @@ image: ./thumbnail-browser-portrait.png
 source: "medium.com"
 tags: ["Design", "UX"]
 category: Article
+time: 8 min reads
 ---

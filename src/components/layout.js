@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { rhythm, scale } from "../utils/typography"
 import "./layout.scss"
 
 
@@ -37,10 +36,18 @@ class Layout extends React.Component {
         <main>{children}</main>
         <footer>
         <div className="container footer">
-            <h3>A project by
-            {` `}
-            <a href="https://dribbble.com/uigate">uigate</a>
-            </h3>
+            <div className="credit">
+              <h3>Maker
+              {` `}
+              <a href="https://vijayverma.co">vijay verma.</a>
+              </h3>
+            </div>
+            <div className="project">
+              <h3>Project by
+              {` `}
+              <a href="https://dribbble.com/uigate">uigate</a>
+              </h3>
+            </div>
         </div>
         </footer>
       </div>

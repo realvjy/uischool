@@ -92,7 +92,7 @@ body, html{
 .hero_details{
   text-align: center;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
   @media (max-width: $mobile-landscape){
     padding-top: 50px;
     padding-bottom: 50px;
@@ -114,6 +114,15 @@ body, html{
   .form{
     margin-top: 20px;
     color: $pink;
+    font-size: 32px;
+  }
+  a{
+    padding: 10px 20px;
+    display: inline-block;
+    color: $white;
+    border: 1px solid $white;
+    border-radius: 12px;
+    margin-top: 30px;
   }
 }
 .featured_section{
@@ -242,6 +251,86 @@ body, html{
     @media (max-width: $mobile-landscape){
       text-align: center;
         font-size: 72px;
+    }
+  }
+}
+
+.s_logo{
+  padding-top: 20px;
+  a{
+    display: block;
+    img{
+      height: 32px;
+    }
+  }
+}
+.curator_head{
+  padding-top: 100px;
+  h1{
+    color: $white;
+    font-size: 60px;
+    font-family: $playfair;
+  }
+}
+
+
+.curators_section{
+  .curators_list{
+    margin-top: 140px;
+    .curator_box{
+      display: flex;
+      flex-direction: row;
+      @media (max-width: $mobile-landscape){
+        flex-direction: column;
+      }
+      .media{
+        width: 20%;
+        text-align: right;
+        @media (max-width: $mobile-landscape){
+          width: 100%;
+          text-align: left;
+        }
+        img{
+          width: 120px;
+          border-radius: 50%;
+        }
+      }
+      .content_wrapper{
+        width: 80%;
+        @media (max-width: $mobile-landscape){
+          width: 100%;
+        }
+        .content{
+          padding: 0 20px;
+          margin-bottom: 80px;
+          .meta_info{
+            h2{
+              font-size: 44px;
+              font-family: $playfair;
+              margin-bottom: 18px;
+            }
+            h3{
+              font-size: 24px;
+              margin-bottom:10px;
+            }
+            p{
+              font-size: 20px;
+              line-height: 28px;
+              color: $oho-grey;
+              font-weight: 200;
+              margin-bottom: 10px;
+            }
+          }
+          .social{
+            ul{
+              >li{
+                display: inline-block;
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -19,7 +19,8 @@ class BlogIndex extends React.Component {
             <img src="/logo.svg"/>
             <h1>We are creating the next generation designers</h1>
             <div className="form">
-              Comming Soon
+              <h3>Comming Soon</h3>
+              <a href="/curator">Curator List</a>
             </div>
           </div>
         </div>

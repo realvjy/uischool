@@ -32,7 +32,6 @@ class Layout extends React.Component {
     }
     return (
       <div>
-        <header>{header}</header>
         <main>{children}</main>
         <footer>
         <div className="container footer">

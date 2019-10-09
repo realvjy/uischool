@@ -26,7 +26,7 @@ class BlogIndex extends React.Component {
             <div className="curators_list">
               <div className="curator_box">
                 <div className="media">
-                  <img src="vjy.jpeg"/>
+                  <img src="/vjy.jpeg"/>
                 </div>
                 <div className="content_wrapper">
                   <div className="content">
@@ -47,7 +47,7 @@ class BlogIndex extends React.Component {
               </div>
               <div className="curator_box">
                 <div className="media">
-                  <img src="rohan.png"/>
+                  <img src="/rohan.png"/>
                 </div>
                 <div className="content_wrapper">
                   <div className="content">

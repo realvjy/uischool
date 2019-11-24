@@ -18,7 +18,7 @@ class BlogIndex extends React.Component {
           <div className="hero_details">
             <img src="/logo.svg"/>
             <div className="form">
-              <h3>&nbsp;Comming Soon 2020</h3>
+              <h3>&nbsp;Coming Soon 2020</h3>
             </div>
           </div>
         </div>

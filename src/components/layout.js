@@ -33,22 +33,7 @@ class Layout extends React.Component {
     return (
       <div>
         <main>{children}</main>
-        <footer>
-        <div className="container footer">
-            <div className="credit">
-              <h3>Maker
-              {` `}
-              <a href="https://vijayverma.co">vijay verma.</a>
-              </h3>
-            </div>
-            <div className="project">
-              <h3>Project by
-              {` `}
-              <a href="https://dribbble.com/uigate">uigate</a>
-              </h3>
-            </div>
-        </div>
-        </footer>
+        
       </div>
     )
   }

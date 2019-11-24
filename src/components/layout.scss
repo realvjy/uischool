@@ -83,22 +83,22 @@ body, html{
 
 .hero_section{
   background: $blue;
-  padding-bottom: 120px;
-  background-image: url('/uischool-pat.png');
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .hero_details{
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 80px;
   @media (max-width: $mobile-landscape){
     padding-top: 50px;
     padding-bottom: 50px;
   }
   img{
-    max-height: 120px;
+    height: 180px;
   }
   h1{
     color: $white;
@@ -112,9 +112,11 @@ body, html{
     }
   }
   .form{
-    margin-top: 20px;
+    margin-top: 80px;
     color: $pink;
-    font-size: 32px;
+    font-size: 24px;
+    letter-spacing: 20px;
+    text-transform: uppercase;
   }
   a{
     padding: 10px 20px;
@@ -126,10 +128,10 @@ body, html{
   }
 }
 .featured_section{
+
   article{
     margin: 30px 150px;
     @media (max-width: $tablet-wide){
-        margin: 10px;
     }
     .article_box{
       padding: 30px 48px;
@@ -198,22 +200,28 @@ body, html{
     }
   }
 }
+
+footer{
+  background: $blue;
+
+}
 .footer{
   text-align: center;
-  padding-bottom: 20px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: row;
+  margin-top: 100px;
+
   .credit{
-    margin: 20px;
+    color: $white;
+    margin-right: 30px;
     h3{
       font-size: 16px;
       opacity: .6;
       a{
         text-decoration: none;
         font-weight: 600;
-        color: $black;
+        color: $white;
         &:hover{
 
         }
@@ -221,15 +229,14 @@ body, html{
     }
   }
   .project{
-    margin: 20px;
-
+    color: $white;
     h3{
       font-size: 16px;
       opacity: .6;
       a{
         text-decoration: none;
         font-weight: 600;
-        color: $black;
+        color: $white;
         &:hover{
 
         }

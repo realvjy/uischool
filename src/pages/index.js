@@ -17,53 +17,27 @@ class BlogIndex extends React.Component {
         <div className="container">
           <div className="hero_details">
             <img src="/logo.svg"/>
-            <h1>We are creating the next generation designers</h1>
             <div className="form">
-              <h3>Comming Soon</h3>
-              <a href="/curator">Curator List</a>
+              <h3>&nbsp;Comming Soon 2020</h3>
             </div>
           </div>
         </div>
-        </header>
-        <div className="container featured_head">
-          <h1>Featured Read</h1>
+        <div className="container footer">
+            <div className="credit">
+              <h3>Initiated by
+              {` `}
+              <a href="https://vijayverma.co">vijay verma.</a>
+              </h3>
+            </div>
+            <div className="project">
+              <h3>Project by
+              {` `}
+              <a href="https://dribbble.com/uigate">uigate</a>
+              </h3>
+            </div>
         </div>
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <>
-              <section className="featured_section">
-                <div className="container">
+        </header>
 
-                  <article key={node.fields.slug}>
-                    <div className="article_box">
-                      <ul className="tag_list">
-                      {node.frontmatter.tags.map(tag => (
-                        <li key={tag}>
-                            {tag}
-                        </li>
-                      ))}
-                      </ul>
-                      <a href={node.frontmatter.link} target="__blank">
-                        <h2>
-                          {title}
-                        </h2>
-                        <div className="meta_info">
-                          <div className="credit">
-                            <h4>Author <strong>{node.frontmatter.author}</strong></h4> • <h4>{node.frontmatter.time}</h4>
-                          </div>
-                          <div className="source">
-                            <img src="/anchor.svg"/>{node.frontmatter.source}
-                          </div>
-                        </div>
-                      </a>
-                      </div>
-                  </article>
-                </div>
-              </section>
-            </>
-          )
-        })}
       </Layout>
     )
   }

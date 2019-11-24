@@ -99,6 +99,10 @@ body, html{
   }
   img{
     height: 180px;
+    @media (max-width: $mobile-landscape){
+      height: auto;
+      width: 90%;
+    }
   }
   h1{
     color: $white;
@@ -116,6 +120,7 @@ body, html{
     color: $pink;
     font-size: 24px;
     letter-spacing: 20px;
+    line-height: 150%;
     text-transform: uppercase;
   }
   a{
@@ -211,10 +216,18 @@ footer{
   justify-content: space-between;
   flex-direction: row;
   margin-top: 100px;
-
+  @media (max-width: $mobile-landscape){
+    justify-content: center;
+    flex-direction: column;
+  }
   .credit{
     color: $white;
     margin-right: 30px;
+    margin-top: 20px;
+    @media (max-width: $mobile-landscape){
+      display: block;
+      width: 100%;
+    }
     h3{
       font-size: 16px;
       opacity: .6;
@@ -230,6 +243,11 @@ footer{
   }
   .project{
     color: $white;
+    margin-top: 20px;
+    @media (max-width: $mobile-landscape){
+      display: block;
+      width: 100%;
+    }
     h3{
       font-size: 16px;
       opacity: .6;
